@@ -1,5 +1,6 @@
 
 import styles from './portfolio.module.css';
+import Image from "next/image"
 
 export default function PortfolioPage() {
   const projects = [
@@ -28,10 +29,12 @@ export default function PortfolioPage() {
               style={{ animationDelay: `${index * 300}ms` }}
             >
               <div className={styles.imageWrapper}>
-                <img
+                <Image
                   src={`/images/${project.Image}`}
                   alt={`Project ${index + 1}`}
                   className={styles.projectImage}
+                  width={640}
+                  height={640}
                 />
               </div>
               <div className={styles.overlay}>

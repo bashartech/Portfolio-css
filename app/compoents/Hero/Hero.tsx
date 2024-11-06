@@ -44,7 +44,7 @@ export default function Hero() {
         <div className={styles.text}>
           <div className={styles.content}>
             <h3 className={styles.greeting}>
-              Hello, It's Me
+              Hello Its Me
             </h3>
             <h1 className={styles.name}>M.Bashar</h1>
             <h3 className={styles.role}>
